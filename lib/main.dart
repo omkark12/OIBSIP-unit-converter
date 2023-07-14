@@ -56,51 +56,48 @@ class _UnitConverterScreenState extends State<UnitConverterScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage("img/unit.jpg"))),
-      child: Scaffold(
-        backgroundColor: Colors.teal.shade100,
-        appBar: AppBar(
-          backgroundColor: Colors.teal.shade50,
-          title: Text('Unit Converter',
-              style:
-                  TextStyle(color: Colors.black, fontWeight: FontWeight.bold)),
-          leading: IconButton(
-            icon: Icon(Icons.menu, color: Colors.black),
-            onPressed: () {
-              // Handle menu icon press
-            },
-          ),
+    return Scaffold(
+      backgroundColor: Colors.teal.shade100,
+      appBar: AppBar(
+        backgroundColor: Colors.teal.shade50,
+        title: Text(
+          'Unit Converter',
+          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
         ),
-        body: Padding(
-          padding: const EdgeInsets.all(6.0),
+        leading: IconButton(
+          icon: Icon(Icons.menu, color: Colors.black),
+          onPressed: () {
+            // Handle menu icon press
+          },
+        ),
+      ),
+      body: SingleChildScrollView(
+        // Wrap the Column with SingleChildScrollView
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(6.0, 12.0, 6.0, 6.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Column(
-                children: [
-                  Image.asset(
-                    'img/unit.jpg',
-                    height: 400,
-                    width: 500,
+              Image.asset(
+                'img/unit.jpg',
+                height: 200,
+                width: 200,
+              ),
+              TextField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  fillColor: Colors.teal.shade50,
+                  filled: true,
+                  hintText: 'Value',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
                   ),
-                  SizedBox(height: 20),
-                  TextField(
-                    keyboardType: TextInputType.number,
-                    decoration: InputDecoration(
-                        fillColor: Colors.teal.shade50,
-                        filled: true,
-                        hintText: 'Value',
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10))),
-                    onChanged: (value) {
-                      setState(() {
-                        inputValue = double.tryParse(value) ?? 0.0;
-                      });
-                    },
-                  ),
-                ],
+                ),
+                onChanged: (value) {
+                  setState(() {
+                    inputValue = double.tryParse(value) ?? 0.0;
+                  });
+                },
               ),
               SizedBox(height: 16.0),
               Row(
@@ -149,9 +146,10 @@ class _UnitConverterScreenState extends State<UnitConverterScreen> {
               Container(
                 padding: EdgeInsets.all(17),
                 decoration: BoxDecoration(
-                    color: Colors.teal.shade50,
-                    borderRadius: BorderRadius.circular(10),
-                    border: Border.all(color: Colors.black, width: 1)),
+                  color: Colors.teal.shade50,
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: Colors.black, width: 1),
+                ),
                 alignment: Alignment.center,
                 child: Text(
                   'Result: $outputValue',
