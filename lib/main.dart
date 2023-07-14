@@ -64,12 +64,6 @@ class _UnitConverterScreenState extends State<UnitConverterScreen> {
           'Unit Converter',
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
         ),
-        leading: IconButton(
-          icon: Icon(Icons.menu, color: Colors.black),
-          onPressed: () {
-            // Handle menu icon press
-          },
-        ),
       ),
       body: SingleChildScrollView(
         // Wrap the Column with SingleChildScrollView
