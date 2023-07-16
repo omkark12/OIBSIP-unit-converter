@@ -2,15 +2,14 @@
 
 A new Flutter project.
 
-## Getting Started
+Here are some of the key features of my Todo App:
 
-This project is a starting point for a Flutter application.
+🌐 Login page 
 
-A few resources to get you started if this is your first Flutter project:
+📝 Create and delete tasks
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+✅ Mark tasks as completed
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+💡 Intuitive user interface
+
+![UTCON](https://github.com/omkark12/OIBSIP-unit-converter/assets/119477596/c113d4f3-5430-4ecc-bdef-16a1c7ad40ee)
