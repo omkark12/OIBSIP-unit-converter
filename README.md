@@ -2,14 +2,14 @@
 
 A new Flutter project.
 
-Here are some of the key features of my Todo App:
+Some of the key features of this unit converter include:
 
-🌐 Login page 
+✅ User-friendly interface 
 
-📝 Create and delete tasks
+✅ Multiple unit categories
 
-✅ Mark tasks as completed
+✅ Real-time conversion
 
-💡 Intuitive user interface
+✅ Accurate results
 
 ![UTCON](https://github.com/omkark12/OIBSIP-unit-converter/assets/119477596/c113d4f3-5430-4ecc-bdef-16a1c7ad40ee)
